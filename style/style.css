@@ -70,7 +70,7 @@ body {
     height: var(--heightWelcomePage);
 }
 
-.welcome_container {
+.container_welcome {
     height: 100%;
     display: flex;
     align-items: end;
@@ -109,18 +109,8 @@ body {
     display: flex;
     gap: 50px;
 }
-
-.icon {
-    position: relative;
-}
   
 .icon::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     opacity: 0;
     transition: opacity 0.2s ease-in-out;
 }
@@ -128,7 +118,7 @@ body {
 .icon:hover::before {
     opacity: 0.5;
 }
-  
+
 .icon:hover img {
     filter: brightness(0) saturate(100%) invert(100%);
     transition: filter 0.2s ease-in-out;
@@ -140,7 +130,6 @@ body {
     height: var(--heightWelcomePage);
     overflow: hidden;
     z-index: -1;
-    
 }
 
 .welcomeVideo video {
@@ -149,7 +138,77 @@ body {
     object-fit: cover;
 }
 
+/* ---- showreels block ---- */
 
+.title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 49px;
+    text-transform: uppercase;
+    color: var(--textColorToo);
+    margin: 64px 0 54px 0;
+}
+
+.showreels_content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.showreel {
+    width: 48%;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.showreel::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 10;
+}
+
+.showreel2022::before {
+    background-image: url('../img/cover2022.jpg');
+}
+.showreel2020::before {
+    background-image: url('../img/cover2020.jpg');
+}
+  
+.showreel:hover::before {
+    opacity: 0;
+}
+
+.showreel:not(:hover)::before {
+    opacity: 1;
+}
+
+.subtitles {
+    padding: 14px 0 50px 0;
+    display: flex;
+    position: relative;
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: var(--textColorToo);
+    position: relative;
+}
+
+.subtitle2020 {
+    left: 50%;
+}
 
 
 .test {
