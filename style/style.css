@@ -229,7 +229,7 @@ body {
 
 .youtubeVideo {
     border-radius: 12px;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     font-weight: 600;
     font-size: 22px;
     line-height: 27px;
@@ -242,7 +242,7 @@ body {
 }
 
 .youtubeVideo:hover {
-    border: 1px solid var(--textColor);
+    border: 2px solid var(--textColor);
     color: var(--textColor);
 }
 
@@ -298,3 +298,62 @@ body {
     background-image: url('../img/queens.jpg');
 }
 
+/* ---- films block ---- */
+
+.poster img {
+    border-radius: 12px;
+    width: 100%;
+}
+
+.about_film {
+    padding: 24px 4px;
+}
+
+.film_name {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: var(--textColor);
+}
+
+.film_type {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--textColorToo);
+    padding: 8px 0 6px 0;
+}
+
+.film_genre {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--textColorToo);
+}
+
+.genre {
+    color: var(--textColor);
+}
+
+.film_description {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--textColorToo);
+    padding: 18px 0 26px 0;
+}
+
+.film_status {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--textColor);
+}
+
+.film_awards {
+    display: flex;
+    gap: 40px;
+    padding-top: 26px;
+}
