@@ -357,3 +357,37 @@ body {
     gap: 40px;
     padding-top: 26px;
 }
+
+/* ---- show block ---- */
+
+.show_page {
+    background: var(--backgroundColorToo);
+}
+
+.youtubeVideo_cringe::before {
+    background-image: url('../img/cringe.jpg');
+}
+.youtubeVideo_jam::before {
+    background-image: url('../img/jam.jpg');
+}
+.youtubeVideo_brb::before {
+    background-image: url('../img/brb.jpg');
+}
+.youtubeVideo_threecats::before {
+    background-image: url('../img/threecats.jpg');
+}
+
+
+/* ---- footer ---- */
+.container_footer {
+    padding: 35px 0 20px 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(183, 183, 183, 1);
+}
+
+.metwet {
+    color: rgba(161, 205, 0, 1);
+    text-decoration: none;
+}
