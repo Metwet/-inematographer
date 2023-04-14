@@ -377,6 +377,24 @@ body {
     background-image: url('../img/threecats.jpg');
 }
 
+/* ---- podcasts block ---- */
+
+.youtubeVideo_rule34::before {
+    background-image: url('../img/rule34.jpg');
+}
+.youtubeVideo_stahovich::before {
+    background-image: url('../img/stahovich.jpg');
+}
+.youtubeVideo_humanfriend::before {
+    background-image: url('../img/humanfriend.jpg');
+}
+.youtubeVideo_letters::before {
+    background-image: url('../img/letters.jpg');
+}
+
+
+/* ---- BIO block ---- */
+
 
 /* ---- footer ---- */
 .container_footer {
