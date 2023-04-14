@@ -84,21 +84,21 @@ body {
     align-items: center;
 }
 
-.agent_title {
+.contact_title {
     font-weight: 700;
     font-size: 28px;
     line-height: 34px;
     color: var(--textColor);
 }
 
-.agent_name {
+.contact_name {
     font-weight: 600;
     font-size: 28px;
     line-height: 34px;
     color: var(--textColorToo);
 }
 
-.agent_email, .agent_number {
+.contact_email, .contact_number {
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
@@ -394,7 +394,48 @@ body {
 
 
 /* ---- BIO block ---- */
+.bio_page {
+    background-color: var(--backgroundColorToo);
+}
 
+.container_bio {
+    padding: 140px 0;
+}
+.bio_content {
+    display: flex;
+    gap: 95px;
+    align-items: center;
+}
+
+.bio_text {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    font-variant: small-caps;
+    color: var(--textColorToo);
+    width: 50%;
+}
+
+.bio_photo img {
+    border-radius: 5px;
+    max-height: 680px;;
+}
+
+.contacts {
+    display: flex;
+    gap: 95px;
+    margin: 62px 0;
+}
+
+.agent_contact {
+    width: 50%;
+}
+
+.socialmedia_icons {
+    display: flex;
+    justify-content: center;
+    gap:220px
+}
 
 /* ---- footer ---- */
 .container_footer {
