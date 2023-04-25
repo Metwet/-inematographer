@@ -1,0 +1,143 @@
+.container {
+    max-width: 600px;
+}
+
+/* ---- header ----*/
+
+.page__header {
+    height: 80px;
+}
+
+.menu {
+    display: none;
+}
+
+.filmreel {
+    display: block;
+    margin-left: auto;
+}
+
+/* ---- welcome block ---- */
+:root {
+    --heightWelcomePage: calc(100vh - 80px);;
+}
+
+.container_welcome {
+    padding-bottom: 35px;
+}
+
+.contact p {
+    margin-bottom: 4px;
+}
+
+.contact_title {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.contact_name {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.contact_email, .contact_number {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.icon_block {
+    gap: 4px;
+}
+
+.icon img {
+    width: 60%;
+}
+
+/* ---- showreels block ---- */
+
+.title {
+    font-size: 24px;
+    line-height: 36px;
+    padding: 20px 0 16px 0;
+}
+
+.showreels_content {
+    display: block;
+}
+
+.showreel {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.showreel2022::before {
+    background-image: url('../img/cover2022mob.jpg');
+}
+.showreel2020::before {
+    background-image: url('../img/cover2020mob.jpg');
+}
+
+.subtitles {
+    display: none;
+}
+
+/* ---- clips block ---- */
+
+.youtubeVideo {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+/* ---- films block ---- */
+
+.film {
+    display: block;
+    padding-bottom: 26px;
+    text-align: center;
+}
+
+.film_awards {
+    gap: 24px;
+    justify-content: center;
+}
+
+/* ---- BIO block ---- */
+
+.container_bio {
+    padding: 40px 10px;
+}
+
+.bio_content {
+    display: block;
+}
+
+.bio_text {
+    font-size: 26px;
+    line-height: 32px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.bio_photo {
+    text-align: center;
+}
+
+.contacts {
+    display: block;
+    gap: 95px;
+    margin: 30px 0;
+}
+
+.agent_contact {
+    width: 100%;
+}
+
+.roman_contact {
+    margin-top: 30px;
+}
+
+.socialmedia_icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px
+}
