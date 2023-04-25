@@ -1,0 +1,142 @@
+.container {
+    max-width: 760px;
+}
+
+/* ---- header ----*/
+
+.page__header {
+    height: 80px;
+}
+
+.container_header {
+    padding: 28px 10px 0 10px;
+}
+
+.logoRomana {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.сinematographer {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.menu {
+    font-size: 16px;
+    line-height: 20px;
+    gap: 40px;
+}
+
+/* ---- welcome block ---- */
+:root {
+    --heightWelcomePage: calc(100vh - 80px);;
+}
+
+.container_welcome {
+    padding-bottom: 45px;
+}
+
+.contact_title {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.contact_name {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.contact_email, .contact_number {
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.icon_block {
+    gap: 30px;
+}
+
+.icon img {
+    width: 80%;
+}
+
+/* ---- showreels block ---- */
+
+.title {
+    font-size: 30px;
+    line-height: 40px;
+    padding: 30px 0 24px 0;
+}
+
+.subtitle2022 {
+    padding-left: 5%;
+}
+
+.subtitle2020 {
+    left: 45%;
+}
+
+/* ---- clips block ---- */
+
+.item {
+    padding-bottom: 20px;
+}
+
+/* ---- films block ---- */
+
+@media screen and (max-width: 990px) {
+    .poster img {
+        width: auto;
+        max-height: 400px;
+    }
+    
+    .film {
+        display: flex;
+        padding-bottom: 34px;
+    }
+    
+    .about_film {
+        padding-left: 20px;
+    }
+}
+
+/* ---- BIO block ---- */
+
+.container_bio {
+    padding: 100px 30px;
+}
+
+.bio_content {
+    gap: 35px;
+}
+
+.bio_text {
+    font-size: 24px;
+    line-height: 36px;
+    width: 50%;
+}
+
+.bio_photo img {
+    max-height: 400px;;
+}
+
+.contacts {
+    display: flex;
+    gap: 95px;
+    margin: 62px 0;
+}
+
+.agent_contact {
+    width: 50%;
+}
+
+.socialmedia_icons {
+    display: flex;
+    justify-content: center;
+    gap:220px
+}
+
+/* ---- footer ---- */
+.container_footer {
+    padding-top: 25px 15px 10px 15px;
+}

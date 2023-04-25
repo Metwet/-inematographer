@@ -11,8 +11,8 @@ body {
 }
 
 .container {
-    margin: 0 auto;
     max-width: 1200px;
+    padding: 0 10px;
 }
 
 /* ---- header ----*/
@@ -22,7 +22,7 @@ body {
 }
 
 .container_header {
-    padding: 38px 0 0 0;
+    padding: 38px 10px 0 10px;
     display: flex;
     align-items: center;
 }
@@ -50,7 +50,7 @@ body {
 }
 
 .menu_item {
-    color: #FFFFFF;
+    color: var(--textColorToo);
     text-decoration: none;
     padding-bottom: 5px;
     border-bottom: 1px solid transparent; 
@@ -60,6 +60,10 @@ body {
 .menu_item:hover {
     color: var(--textColor);
     border-bottom: 1px solid var(--textColor);
+}
+
+.filmreel {
+    display: none;
 }
 
 /* ---- welcome block ---- */
@@ -194,7 +198,7 @@ body {
 }
 
 .subtitles {
-    padding: 14px 0 50px 0;
+    padding: 14px 10px 50px 10px;
     display: flex;
     position: relative;
 }
@@ -212,11 +216,6 @@ body {
     left: 50%;
 }
 
-
-.test {
-    color: var(--textColor);
-}
-
 /* ---- clips block ---- */
 
 .clips_page {
@@ -224,7 +223,7 @@ body {
 }
 
 .item {
-    padding: 0 10px 40px 0;
+    padding: 0 5px 40px 5px;
 }
 
 .youtubeVideo {
@@ -399,8 +398,9 @@ body {
 }
 
 .container_bio {
-    padding: 140px 0;
+    padding: 140px 10px;
 }
+
 .bio_content {
     display: flex;
     gap: 95px;
@@ -439,7 +439,7 @@ body {
 
 /* ---- footer ---- */
 .container_footer {
-    padding: 35px 0 20px 0;
+    padding: 35px 10px 20px 10px;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
