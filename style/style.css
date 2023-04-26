@@ -21,6 +21,18 @@ body {
     height: 120px;
 }
 
+.page__header_visible {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--backgroundColor);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    z-index: 20;
+    transition: opacity 0.2s ease-in-out;
+    opacity: 0.95;
+}
+
 .container_header {
     padding: 38px 10px 0 10px;
     display: flex;

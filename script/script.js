@@ -1,7 +1,8 @@
+const header = document.querySelector('.page__header');
 const filmreel = document.querySelector('.filmreel');
+const wheel = document.querySelector('.wheel');
 const menu = document.querySelector('.menu');
 const menuItems = document.querySelectorAll('.menu_item');
-const wheel = document.querySelector('.wheel');
 let isMenuOpen = false;
 let rotateAngle = 0;
 
@@ -32,3 +33,11 @@ for (let i = 0; i < menuItems.length; i++) {
         closeMenu();
     });
 }
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 100) {
+    header.classList.add('page__header_visible');
+  } else {
+    header.classList.remove('page__header_visible');
+  }
+});
