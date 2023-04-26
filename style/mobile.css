@@ -8,18 +8,54 @@
     height: 80px;
 }
 
-.menu {
-    display: none;
+.container_header {
+    align-items: stretch;
+    position: relative;
+    z-index: 4;
+    background-color: var(--backgroundColor);
+}
+
+.logoRomana {
+    position: relative;
+    z-index: 4;
 }
 
 .filmreel {
     display: block;
     margin-left: auto;
+    position: relative;
+    z-index: 8;
+}
+
+.wheel {
+    transition: transform 1s ease;
+}
+
+.rotate {
+    animation: rotate-wheel 1s linear infinite;
+}
+
+@keyframes rotate-wheel {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--backgroundColor);
+    padding: 80px 40px 20px 40px;
+    position: absolute;
+    z-index: 5;
+    right: 0;
+    top: -455px;
+    transition: top 0.3s ease-in-out;
+    width: 380px;
 }
 
 /* ---- welcome block ---- */
 :root {
-    --heightWelcomePage: calc(100vh - 80px);;
+    --heightWelcomePage: calc(100vh - 60px);;
 }
 
 .container_welcome {
