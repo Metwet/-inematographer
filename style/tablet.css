@@ -30,7 +30,7 @@
 
 /* ---- welcome block ---- */
 :root {
-    --heightWelcomePage: calc(100vh - 80px);;
+    --heightWelcomePage: calc(100vh);;
 }
 
 .container_welcome {

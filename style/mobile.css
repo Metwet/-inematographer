@@ -55,7 +55,7 @@
 
 /* ---- welcome block ---- */
 :root {
-    --heightWelcomePage: calc(100vh - 60px);;
+    --heightWelcomePage: calc(100vh);;
 }
 
 .container_welcome {
