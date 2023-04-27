@@ -34,10 +34,17 @@ for (let i = 0; i < menuItems.length; i++) {
     });
 }
 
+let lastScrollTop = 0;
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 100) {
-    header.classList.add('page__header_visible');
+  const currentScrollTop = window.scrollY;
+  if (currentScrollTop > 100) {
+    if (currentScrollTop > lastScrollTop) {
+      header.classList.remove('page__header_visible');
+    } else {
+      header.classList.add('page__header_visible');
+    }
   } else {
     header.classList.remove('page__header_visible');
   }
+  lastScrollTop = currentScrollTop;
 });
