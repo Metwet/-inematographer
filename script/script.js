@@ -5,6 +5,7 @@ const menu = document.querySelector('.menu');
 const menuItems = document.querySelectorAll('.menu_item');
 let isMenuOpen = false;
 let rotateAngle = 0;
+let lastScrollTop = 0;
 
 function closeMenu() {
     menu.style.top = "-455px";
@@ -31,10 +32,13 @@ filmreel.addEventListener('click', () => {
 for (let i = 0; i < menuItems.length; i++) {
     menuItems[i].addEventListener('click', () => {
         closeMenu();
+        setTimeout(function() {
+            header.classList.remove('page__header_visible');
+        }, 1000); 
     });
 }
 
-let lastScrollTop = 0;
+
 window.addEventListener('scroll', () => {
   const currentScrollTop = window.scrollY;
   if (currentScrollTop > 100) {

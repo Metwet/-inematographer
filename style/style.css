@@ -19,6 +19,9 @@ body {
 
 .page__header {
     height: 120px;
+    position: absolute;
+    width: 100%;
+    background-color: var(--backgroundColor);
 }
 
 .page__header_visible {
@@ -80,7 +83,7 @@ body {
 
 /* ---- welcome block ---- */
 :root {
-    --heightWelcomePage: calc(100vh - 124px);;
+    --heightWelcomePage: calc(100vh);;
 }
 .welcome_page {
     height: var(--heightWelcomePage);
