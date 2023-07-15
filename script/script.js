@@ -52,3 +52,22 @@ window.addEventListener('scroll', () => {
   }
   lastScrollTop = currentScrollTop;
 });
+
+//lazy loading
+
+const videoElements = document.querySelectorAll(`.youtubeVideo_full`);
+
+const observer = new IntersectionObserver((entries, observer)=>{
+  entries.forEach(entry => {
+    if(entry.isIntersecting) {
+      const videoElement = entry.target;
+      const videoSrc = videoElement.getAttribute(`data-src`);
+      videoElement.innerHTML = `<iframe  src="${videoSrc}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
+      observer.unobserve(videoElement);
+    }
+  })
+});
+
+videoElements.forEach(videoElement => {
+  observer.observe(videoElement);
+});
